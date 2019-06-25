@@ -1,0 +1,26 @@
+{
+  "name": "Normalyzer_operator",
+  "description": "Normalization methods from the NormalyzerDE R package",
+  "tags": ["normalization"],
+  "authors": ["Javier and Faris"],
+  "urls": ["https://github.com/tercen/normalyzer_operator"],
+  "properties": [
+    {
+    "kind": "EnumeratedProperty",
+    "name": "method",
+    "defaultValue": "none",
+    "values": [
+        "global intensity",
+        "median",
+        "mean",
+        "vsn",
+        "quantile",
+        "smad",
+        "cyclicLoess",
+        "global RLR",
+        "none"
+         ],
+    "description": "Normalization method."
+  }
+  ]
+}
