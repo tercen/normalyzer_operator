@@ -1,14 +1,8 @@
 library(tercen)
 library(dplyr)
 
-# creating an operator library 
-# setRepositories() (use 1 9 10 11 12 13)
-# packrat::init(options = list(use.cache = TRUE))
-# options(repos = c(getOption("repos"), BiocInstaller::biocinstallRepos()))
-ctx = tercenCtx()
-
-# select_type <- "none"
-select_type <- ctx$op.value('method')
+select_type <- "none"
+# select_type <- ctx$op.value('method')
 
 noNorm <- function(rawData){rawData}
 
@@ -22,11 +16,12 @@ norm_func <- switch(select_type,
                     "cyclicLoess" = NormalyzerDE::performCyclicLoessNormalization,
                     "global RLR" = NormalyzerDE::performGlobalRLRNormalization,
                     "none" = noNorm
-)
+                    )
 
-# options( "tercen.workflowId" = "09f761309ae90820aac2581211009bff")
-# options( "tercen.stepId" = "6-4" )
+options( "tercen.workflowId" = "09f761309ae90820aac2581211009bff")
+options( "tercen.stepId" = "6-4" )
 
+ctx = tercenCtx()
 
 data = select(ctx, .y, .ci, .ri )
 data = reshape2::acast(data, .ri ~ .ci, value.var='.y', fun.aggregate=mean)
