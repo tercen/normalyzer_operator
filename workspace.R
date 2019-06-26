@@ -1,6 +1,11 @@
 library(tercen)
 library(dplyr)
 
+# creating an operator library 
+# setRepositories() (use 1 9 10 11 12 13)
+# packrat::init(options = list(use.cache = TRUE))
+# options(repos = c(getOption("repos"), BiocInstaller::biocinstallRepos()))
+
 select_type <- "none"
 # select_type <- ctx$op.value('method')
 

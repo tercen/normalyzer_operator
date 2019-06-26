@@ -1,5 +1,5 @@
 {
-  "name": "Normalyzer_operator",
+  "name": "normalyzer_operator",
   "description": "Normalization methods from the NormalyzerDE R package",
   "tags": ["normalization"],
   "authors": ["Javier and Faris"],
