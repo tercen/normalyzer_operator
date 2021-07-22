@@ -1,6 +1,6 @@
 {
-  "name": "normalyzer_operator",
-  "description": "Normalization methods from the NormalyzerDE R package",
+  "name": "NormalyzerDE",
+  "description": "Calculates a quantitative and qualitative evaluation of high-throughput omics data. Used to identify systematic biases introduced during sample processing and data generation.",
   "tags": ["normalization"],
   "authors": ["Javier and Faris"],
   "urls": ["https://github.com/tercen/normalyzer_operator"],
