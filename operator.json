@@ -1,9 +1,10 @@
 {
-  "name": "NormalyzerDE",
-  "description": "Calculates a quantitative and qualitative evaluation of high-throughput omics data. Used to identify systematic biases introduced during sample processing and data generation.",
-  "tags": ["normalization"],
-  "authors": ["Javier and Faris"],
+  "name": "Normalisation",
+  "description": "Implements different normalisation methods.",
+  "tags": ["data transformation", "normalisation"],
+  "authors": ["tercen"],
   "urls": ["https://github.com/tercen/normalyzer_operator"],
+  "container": "tercen/normalyzer_operator:latest",
   "properties": [
     {
     "kind": "EnumeratedProperty",
