@@ -4,7 +4,6 @@ library(NormalyzerDE)
 
 ctx <- tercenCtx()
 
-# select_type <- "none"
 select_type <- ctx$op.value('method', as.character, "mean")
 
 noNorm <- function(rawData) {rawData}
@@ -22,10 +21,9 @@ norm_func <- switch(
   "none" = noNorm
 )
 
-# options( "tercen.workflowId" = "09f761309ae90820aac2581211009bff")
-# options( "tercen.stepId" = "6-4" )
-
-norm_data <- ctx %>% as.matrix(fill = NA) %>%
+norm_data <- ctx %>% 
+  as.matrix(fill = NA) %>% 
+  t() %>%
   norm_func()
 
 df_out <- data.frame(
