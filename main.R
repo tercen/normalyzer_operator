@@ -36,6 +36,6 @@ df_out <- data.frame(
   .ri  = rep(seq.int(from = 0, to = nrow(norm_data) - 1L), ncol(norm_data))
 ) %>% ctx$addNamespace()
 
-#ctx$save(df_out)
+ctx$save(df_out)
 
-tim::build_test_data(res_table = df_out, ctx = ctx, test_name = "test1")
+#tim::build_test_data(res_table = df_out, ctx = ctx, test_name = "test1")
