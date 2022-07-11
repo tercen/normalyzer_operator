@@ -2,10 +2,6 @@ library(tercen)
 library(dplyr)
 library(NormalyzerDE)
 
-#library(tim)
-#options("tercen.workflowId" = "6015a4dd34cef273755e1a1b1500427b")
-#options("tercen.stepId"     = "d31241f6-173f-473a-9307-2b4b3c5c0882")
-
 ctx <- tercenCtx()
 
 select_type <- ctx$op.value('method', as.character, "mean")
@@ -38,4 +34,3 @@ df_out <- data.frame(
 
 ctx$save(df_out)
 
-#tim::build_test_data(res_table = df_out, ctx = ctx, test_name = "test1")
