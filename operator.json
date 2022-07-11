@@ -4,7 +4,7 @@
   "tags": ["data transformation", "normalisation"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/normalyzer_operator"],
-  "container": "tercen/normalyzer_operator:latest",
+  "container": "tercen/normalyzer_operator:0.1.1",
   "properties": [
     {
     "kind": "EnumeratedProperty",
