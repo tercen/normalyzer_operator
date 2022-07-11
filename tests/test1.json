@@ -7,11 +7,11 @@
   "columns": [
     "Observation"
   ],
-  "rows": ["Variable"],
+  "rows": [],
   "colors": [],
   "labels": [],
   "yAxis": "y_values",
   "xAxis": "",
-  "generatedOn": "07/07/2022 02:01:07 PM 2022",
+  "generatedOn": "07/11/2022 07:29:52 AM 2022",
   "version": ""
 }
