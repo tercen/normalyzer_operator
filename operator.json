@@ -1,6 +1,6 @@
 {
   "name": "Normalisation",
-  "description": "Implements different normalisation methods.",
+  "description": "Normalises data using various methods.",
   "tags": [
     "preprocessing",
     "transformation",
