@@ -1,20 +1,34 @@
 {
-  "outputSpecs": [{
-    "kind": "OperatorJoinSpec",
-    "joinOperators": [{
-      "kind": "JoinOperator",
-      "joinType": "left",
-      "leftPair": {
-        "kind": "ColumnPair",
-        "lColumns": ["Variable", "Observation"],
-        "rColumns": ["Variable", "Observation"]
-      },
-      "rightRelation": {
-        "kind": "TableRelation",
-        "attributes": [
-          {"kind": "Attribute", "name": "norm", "type": "double"}
-        ]
-      }
-    }]
-  }]
+  "outputSpecsV2": [
+    {
+      "kind": "OperatorJoinSpec",
+      "joinOperators": [
+        {
+          "kind": "JoinOperator",
+          "joinType": "left",
+          "leftPair": {
+            "kind": "ColumnPair",
+            "lColumns": [
+              "Variable",
+              "Observation"
+            ],
+            "rColumns": [
+              "Variable",
+              "Observation"
+            ]
+          },
+          "rightRelation": {
+            "kind": "TableRelation",
+            "attributes": [
+              {
+                "kind": "Attribute",
+                "name": "norm",
+                "type": "double"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }
