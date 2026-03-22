@@ -13,6 +13,9 @@
     "https://github.com/tercen/normalyzer_operator"
   ],
   "container": "ghcr.io/tercen/normalyzer_operator:dev",
+  "environment": [
+    {"kind": "Pair", "key": "ram", "value": "4000000000.0"}
+  ],
   "properties": [
     {
       "kind": "EnumeratedProperty",
