@@ -21,9 +21,8 @@ norm_func <- switch(
   "none" = noNorm
 )
 
-norm_data <- ctx %>% 
-  as.matrix(fill = NA) %>% 
-  t() %>%
+norm_data <- ctx %>%
+  as.matrix(fill = NA) %>%
   norm_func()
 
 df_out <- data.frame(

@@ -12,7 +12,7 @@
   "urls": [
     "https://github.com/tercen/normalyzer_operator"
   ],
-  "container": "tercen/normalyzer_operator:0.1.1",
+  "container": "ghcr.io/tercen/normalyzer_operator:dev",
   "properties": [
     {
       "kind": "EnumeratedProperty",
