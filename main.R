@@ -22,7 +22,7 @@ norm_func <- switch(
 )
 
 norm_data <- ctx %>%
-  as.matrix(fill = NA) %>%
+  as.matrix(fill = NaN) %>%
   norm_func()
 
 df_out <- data.frame(
