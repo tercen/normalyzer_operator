@@ -12,7 +12,7 @@
   "urls": [
     "https://github.com/tercen/normalyzer_operator"
   ],
-  "container": "tercen/normalyzer_operator:dev",
+  "container": "localhost:5050/tercen/normalyzer_operator:dev",
   "properties": [
     {
       "kind": "EnumeratedProperty",
